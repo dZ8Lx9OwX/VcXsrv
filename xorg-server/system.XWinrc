@@ -80,28 +80,28 @@
 
 // Make some menus...
 menu apps {
-	xcalc   	exec	"xcalc"
-	xclock  	exec	"xclock"
-	xwininfo	exec	"xwininfo -pause"
+	计算器   	exec	"xcalc"
+	时钟  		exec	"xclock"
+	XWin信息	exec	"xwininfo -pause"
 }
 
 menu root {
 // Comments fit here, too...
-	"Reload system.XWinrc"	RELOAD
-	"Applications"        	menu	apps
+	"重新加载system.XWinrc"	RELOAD
+	"应用程序"        	menu	apps
 	Separator
-	"Show log"	exec	"notepad %logfile%"
+	"显示日志"	exec	"notepad %logfile%"
 	Separator
 }
 
 menu aot {
 	Separator
-	"Always on Top"	alwaysontop
+	"始终置顶"	alwaysontop
 }
 
 menu xtermspecial {
 	"Emacs"		exec	"emacs"
-	"Always on Top"	alwaysontop
+	"始终置顶"	alwaysontop
 	Separator
 }
 

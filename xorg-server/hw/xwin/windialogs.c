@@ -291,7 +291,7 @@ winDisplayExitDialog (winPrivScreenPtr pScreenPriv)
                 (WPARAM) GetDlgItem(g_hDlgExit, IDCANCEL), TRUE);
 }
 
-#define CONNECTED_CLIENTS_FORMAT	"There %s currently %d client%s connected."
+#define CONNECTED_CLIENTS_FORMAT	"当前%s %d 个客户端连接%s."
 
 /*
  * Exit dialog window procedure
@@ -315,9 +315,9 @@ winExitDlgProc(HWND hDialog, UINT message, WPARAM wParam, LPARAM lParam)
 
         /* Format the connected clients string */
         if (asprintf(&pszConnectedClients, CONNECTED_CLIENTS_FORMAT,
-                     (s_pScreenPriv->iConnectedClients == 1) ? "is" : "are",
+                     (s_pScreenPriv->iConnectedClients == 1) ? "仅有" : "存在",
                      s_pScreenPriv->iConnectedClients,
-                     (s_pScreenPriv->iConnectedClients == 1) ? "" : "s") == -1)
+                     (s_pScreenPriv->iConnectedClients == 1) ? "" : "") == -1)
             return TRUE;
 
         /* Set the number of connected clients */

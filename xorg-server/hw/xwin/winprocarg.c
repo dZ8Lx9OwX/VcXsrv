@@ -1237,9 +1237,9 @@ winLogVersionInfo(void)
         return;
     s_fBeenHere = TRUE;
 
-    ErrorF("Welcome to the VcXsrv X Server\n");
-    ErrorF("Vendor: %s\n", XVENDORNAME);
-    ErrorF("Release: %d.%d.%d.%d\n\n", XORG_VERSION_MAJOR,
+    ErrorF("欢迎使用 VcXsrv X Server\n");
+    ErrorF("供应商： %s\n", XVENDORNAME);
+    ErrorF("发行版： %d.%d.%d.%d\n\n", XORG_VERSION_MAJOR,
            XORG_VERSION_MINOR, XORG_VERSION_PATCH, XORG_VERSION_SNAP);
 #ifdef HAVE_SYS_UTSNAME_H
     {
@@ -1254,6 +1254,6 @@ winLogVersionInfo(void)
     winOS();
     if (strlen(BUILDERSTRING))
         ErrorF("%s\n", BUILDERSTRING);
-    ErrorF("Contact: %s\n", BUILDERADDR);
+    ErrorF("联系方式： %s\n", BUILDERADDR);
     ErrorF("\n");
 }

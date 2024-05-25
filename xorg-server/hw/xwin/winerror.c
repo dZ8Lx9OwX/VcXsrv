@@ -87,9 +87,9 @@ OsVendorFatalError(const char *f, va_list args)
         }
     }
 
-    winMessageBoxF("A fatal error has occurred and " PROJECT_NAME " will now exit.\n\n"
+    winMessageBoxF("发生致命错误,并且 " PROJECT_NAME " 现在将退出.\n\n"
                    "%s\n\n"
-                   "Please open %s for more information.\n",
+                   "请查看 %s \n以了解更多信息.\n",
                    MB_ICONERROR,
                    g_FatalErrorMessage,
                    (g_pszLogFile ? g_pszLogFile : "the logfile"));
@@ -118,11 +118,11 @@ winMessageBoxF(const char *pszError, UINT uType, ...)
 
 #define MESSAGEBOXF \
 	"%s\n" \
-	"Vendor: %s\n" \
-	"Release: %d.%d.%d.%d\n" \
-	"Contact: %s\n" \
+	"供应商： %s\n" \
+	"版本： %d.%d.%d.%d\n" \
+	"链接： %s\n" \
 	"%s\n\n" \
-	"XWin was started with the following command-line:\n\n" \
+	"XWin 使用以下命令行启动：\n\n" \
 	"%s\n"
 
     size = asprintf(&pszMsgBox, MESSAGEBOXF,

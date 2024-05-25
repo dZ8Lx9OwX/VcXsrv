@@ -18,16 +18,16 @@
 ;--------------------------------
  !include "FileFunc.nsh"
 
-!define NAME "VcXsrv"
-!define VERSION "21.1.13.0"
+!define NAME "cnVcXsrv"
+!define VERSION "21.1.13.1"
 !define UNINSTALL_PUBLISHER "${NAME}"
-!define UNINSTALL_URL "https://github.com/marchaesen/vcxsrv"
+!define UNINSTALL_URL "https://github.com/dZ8Lx9OwX/cnVcXsrv"
 
 ; The name of the installer
 Name "${NAME}"
 
 ; The file to write
-OutFile "vcxsrv.${VERSION}.installer.exe"
+OutFile "cnVcXsrv.${VERSION}.installer.exe"
 
 ; The default installation directory
 InstallDir $PROGRAMFILES32\VcXsrv
@@ -38,13 +38,13 @@ SetCompressor /SOLID lzma
 ; overwrite the old one automatically)
 InstallDirRegKey HKLM SOFTWARE\VcXsrv "Install_Dir"
 
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\English.nlf"
+LoadLanguageFile "${NSISDIR}\Contrib\Language files\SimpChinese.nlf"
 
 VIProductVersion "${VERSION}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "${NAME}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductName" "${NAME}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
 
 ; Request application privileges for Windows Vista
 RequestExecutionLevel admin
@@ -119,7 +119,7 @@ Section "VcXsrv (required)"
   File "..\font-dirs"
   File "..\.Xdefaults"
   File "..\hw\xwin\xlaunch\obj\release\xlaunch.exe"
-  File "..\..\tools\plink\obj\release\plink.exe"
+;  File "..\..\tools\plink\obj\release\plink.exe"
   File "..\..\mesalib\src\obj\release\swrast_dri.dll"
   File "..\hw\xwin\swrastwgl_dri\obj\release\swrastwgl_dri.dll"
   File "..\..\dxtn\obj\release\dxtn.dll"
@@ -261,7 +261,7 @@ Section "Uninstall"
   Delete "$INSTDIR\font-dirs"
   Delete "$INSTDIR\.Xdefaults"
   Delete "$INSTDIR\xlaunch.exe"
-  Delete "$INSTDIR\plink.exe"
+;  Delete "$INSTDIR\plink.exe"
   Delete "$INSTDIR\swrast_dri.dll"
   Delete "$INSTDIR\dxtn.dll"
   Delete "$INSTDIR\swrastwgl_dri.dll"

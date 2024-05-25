@@ -6,8 +6,8 @@ index 1f1f3f20cf..7a3b39eead 100644
  Name "${NAME}"
  
  ; The file to write
--OutFile "vcxsrv-64-debug.${VERSION}.installer.exe"
-+OutFile "vcxsrv-64-debug.${VERSION}.installer.noadmin.exe"
+-OutFile "cnVcXsrv-64-debug.${VERSION}.installer.exe"
++OutFile "cnVcXsrv-64-debug.${VERSION}.installer.noadmin.exe"
  
  ; The default installation directory
 -InstallDir $programfiles64\VcXsrv
@@ -15,9 +15,9 @@ index 1f1f3f20cf..7a3b39eead 100644
  
  SetCompressor /SOLID lzma
  
-@@ -45,8 +45,8 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+@@ -45,8 +45,8 @@ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
  
 -; Request application privileges for Windows Vista
 -RequestExecutionLevel admin
@@ -79,8 +79,8 @@ index eed77b32ee..5b2529f5bc 100644
  Name "${NAME}"
  
  ; The file to write
--OutFile "vcxsrv-64.${VERSION}.installer.exe"
-+OutFile "vcxsrv-64.${VERSION}.installer.noadmin.exe"
+-OutFile "cnVcXsrv-64.${VERSION}.installer.exe"
++OutFile "cnVcXsrv-64.${VERSION}.installer.noadmin.exe"
  
  ; The default installation directory
 -InstallDir $programfiles64\VcXsrv
@@ -88,9 +88,9 @@ index eed77b32ee..5b2529f5bc 100644
  
  SetCompressor /SOLID lzma
  
-@@ -46,8 +46,8 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+@@ -46,8 +46,8 @@ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
  
 -; Request application privileges for Windows Vista
 -RequestExecutionLevel admin
@@ -152,8 +152,8 @@ index 151c59d912..5345bb6a50 100644
  Name "${NAME}"
  
  ; The file to write
--OutFile "vcxsrv-debug.${VERSION}.installer.exe"
-+OutFile "vcxsrv-debug.${VERSION}.installer.noadmin.exe"
+-OutFile "cnVcXsrv-debug.${VERSION}.installer.exe"
++OutFile "cnVcXsrv-debug.${VERSION}.installer.noadmin.exe"
  
  ; The default installation directory
 -InstallDir $PROGRAMFILES32\VcXsrv
@@ -161,9 +161,9 @@ index 151c59d912..5345bb6a50 100644
  
  SetCompressor /SOLID lzma
  
-@@ -42,8 +42,8 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+@@ -42,8 +42,8 @@ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
  
 -; Request application privileges for Windows Vista
 -RequestExecutionLevel admin
@@ -180,8 +180,8 @@ index 6ccd469a4f..911552ff9e 100644
  Name "${NAME}"
  
  ; The file to write
--OutFile "vcxsrv.${VERSION}.installer.exe"
-+OutFile "vcxsrv.${VERSION}.installer.noadmin.exe"
+-OutFile "cnVcXsrv.${VERSION}.installer.exe"
++OutFile "cnVcXsrv.${VERSION}.installer.noadmin.exe"
  
  ; The default installation directory
 -InstallDir $PROGRAMFILES32\VcXsrv
@@ -189,9 +189,9 @@ index 6ccd469a4f..911552ff9e 100644
  
  SetCompressor /SOLID lzma
  
-@@ -46,8 +46,8 @@ VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
- VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+@@ -46,8 +46,8 @@ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+ VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
  
 -; Request application privileges for Windows Vista
 -RequestExecutionLevel admin

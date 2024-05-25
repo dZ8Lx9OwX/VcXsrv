@@ -16,14 +16,14 @@
  *  along with vcxsrv.  If not, see <http://www.gnu.org/licenses/>.
 */
 ;--------------------------------
-!define NAME "VcXsrv"
-!define VERSION "21.1.13.0"
+!define NAME "cnVcXsrv"
+!define VERSION "21.1.13.1"
 
 ; The name of the installer
 Name "${NAME}"
 
 ; The file to write
-OutFile "vcxsrv-debug.${VERSION}.installer.exe"
+OutFile "cnVcXsrv-debug.${VERSION}.installer.exe"
 
 ; The default installation directory
 InstallDir $PROGRAMFILES32\VcXsrv
@@ -34,13 +34,13 @@ SetCompressor /SOLID lzma
 ; overwrite the old one automatically)
 InstallDirRegKey HKLM SOFTWARE\VcXsrv "Install_Dir"
 
-LoadLanguageFile "${NSISDIR}\Contrib\Language files\English.nlf"
+LoadLanguageFile "${NSISDIR}\Contrib\Language files\SimpChinese.nlf"
 
 VIProductVersion "${VERSION}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductName" "${NAME}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "FileDescription" "VcXsrv windows xserver"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "FileVersion" "${VERSION}"
-VIAddVersionKey /LANG=${LANG_ENGLISH} "ProductVersion" "${VERSION}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductName" "${NAME}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "FileDescription" "VcXsrv windows xserver"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "FileVersion" "${VERSION}"
+VIAddVersionKey /LANG=${LANG_SimpChinese} "ProductVersion" "${VERSION}"
 
 ; Request application privileges for Windows Vista
 RequestExecutionLevel admin
@@ -96,7 +96,7 @@ Section "VcXsrv debug exe and dlls"
   File "..\..\apps\xclock\obj\debug\xclock.exe"
   File "..\..\apps\xwininfo\obj\debug\xwininfo.exe"
   File "..\hw\xwin\xlaunch\obj\debug\xlaunch.exe"
-  File "..\..\tools\plink\obj\debug\plink.exe"
+;  File "..\..\tools\plink\obj\debug\plink.exe"
   File "..\..\mesalib\src\obj\debug\swrast_dri.dll"
   File "..\hw\xwin\swrastwgl_dri\obj\debug\swrastwgl_dri.dll"
   File "..\..\dxtn\obj\debug\dxtn.dll"

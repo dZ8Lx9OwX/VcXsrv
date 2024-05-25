@@ -80,7 +80,6 @@ EXTRASTOBUILD =  \
  ..\apps\xhost\$(NOSERVOBJDIR)\xhost.exe \
  ..\apps\xrdb\$(NOSERVOBJDIR)\xrdb.exe \
  ..\apps\xauth\$(NOSERVOBJDIR)\xauth.exe \
- ..\tools\plink\$(NOSERVOBJDIR)\plink.exe \
  hw\xwin\swrastwgl_dri\$(NOSERVOBJDIR)\swrastwgl_dri.dll \
  ..\dxtn\$(NOSERVOBJDIR)\dxtn.dll
 

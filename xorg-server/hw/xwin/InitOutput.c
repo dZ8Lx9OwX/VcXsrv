@@ -934,9 +934,9 @@ ddxUseMsg(void)
 
     /* Notify user where UseMsg text can be found. */
     if (!g_fNoHelpMessageBox)
-        winMessageBoxF("The " PROJECT_NAME " help text has been printed to "
+        winMessageBoxF("关于 " PROJECT_NAME " 的帮助文本已打印到 "
                        "%s.\n"
-                       "Please open %s to read the help text.\n",
+                       "请打开 %s 文档查看帮助信息.\n",
                        MB_ICONINFORMATION, g_pszLogFile, g_pszLogFile);
 }
 

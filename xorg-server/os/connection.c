@@ -322,7 +322,7 @@ CreateWellKnownSockets(void)
 
     if (ListenTransCount == 0 && !NoListenAll)
         FatalError
-            ("Cannot establish any listening sockets - Make sure an X server isn't already running");
+            ("无法建立任何监听套接字 - 请确保 X Server 尚未运行！");
 
 #if !defined(WIN32)
     OsSignal(SIGPIPE, SIG_IGN);

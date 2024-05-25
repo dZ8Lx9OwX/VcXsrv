@@ -229,7 +229,7 @@ LogFilePrep(const char *fname, const char *backup, const char *idstring)
             }
 
             if (rename(logFileName, oldLog) == -1) {
-                ErrorF("Cannot move old log file \"%s\" to \"%s\"\n",
+                ErrorF("无法移动旧的日志文件 \"%s\" 到 \"%s\"\n",
                        logFileName, oldLog);
             }
             free(oldLog);
@@ -991,9 +991,9 @@ FatalError(const char *f, ...)
     static Bool beenhere = FALSE;
 
     if (beenhere)
-        ErrorFSigSafe("\nFatalError re-entered, aborting\n");
+        ErrorFSigSafe("\n重复输入致命错误, 中止\n");
     else
-        ErrorFSigSafe("\nFatal server error:\n");
+        ErrorFSigSafe("\n服务器致命错误:\n");
 
     va_start(args, f);
 
